@@ -1,0 +1,13 @@
+{
+  "name": "1.1-elf-calories",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "go": "nodemon index.js"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

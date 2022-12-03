@@ -1,0 +1,13 @@
+{
+  "name": "3.2",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "go": "nodemon -x 'clear; node index.js'"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

@@ -31,7 +31,7 @@ fn convert_char(ch: char) -> u32 {
 }
 
 fn welcome_message(welcome: &str) {
-    println!("Day 1: {}", welcome);
+    println!("Day 3: {}", welcome);
 }
 
 fn sum_priorities(wrong_items: &mut HashMap<u32, char>) {

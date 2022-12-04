@@ -22,7 +22,7 @@ const n = assignmentPairsText
         if (a.start === b.start) {
             return true;
         } else {
-            return a.end >= b.start;
+            return a.end >= b.end;
         }
     })
     .length;

@@ -46,19 +46,6 @@ for (const move of moves) {
             logger.log(`head moves ↓ to (${headPosition.x}, ${headPosition.y})`);
         }
 
-        if (headPosition.x > xMax) {
-            xMax = headPosition.x;
-        }
-        if (headPosition.x < xMin) {
-            xMin = headPosition.x;
-        }
-        if (headPosition.y > yMax) {
-            yMax = headPosition.y;
-        }
-        if (headPosition.y < yMin) {
-            yMin = headPosition.y;
-        }
-
         _1position = getUpdatedTailPosition(headPosition, _1position, 'h', '1', logger);
         _2position = getUpdatedTailPosition(_1position, _2position, '1', '2', logger);
         _3position = getUpdatedTailPosition(_2position, _3position, '2', '3', logger);
@@ -71,10 +58,5 @@ for (const move of moves) {
         visitedPositions.add(JSON.stringify(tailPosition, null, 2));
     }
 }
-
-logger.log(`xMax: ${xMax}`);
-logger.log(`xMin: ${xMin}`);
-logger.log(`yMax: ${yMax}`);
-logger.log(`yMin: ${yMin}`);
 
 logger.log(visitedPositions.size);
